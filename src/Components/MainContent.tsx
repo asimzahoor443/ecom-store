@@ -181,6 +181,7 @@ const MainContent = () => {
           </button>
         </div>
       </div>
+      <div></div>
     </section>
   );
 };
