@@ -3,6 +3,8 @@ import Sidebar from './Components/Sidebar';
 import './index.css';
 import MainContent from './Components/MainContent';
 import ProductPage from './Components/ProductPage';
+import TopSellers from './Components/TopSellers';
+import PopularBlogs from './Components/PopularBlogs';
 export default function App() {
   return (
     <Router>
@@ -13,6 +15,10 @@ export default function App() {
             <Route path="/" element={<MainContent />} />
             <Route path="/product/:id" element={<ProductPage />} />
           </Routes>
+          <div>
+            <TopSellers />
+            <PopularBlogs />
+          </div>
         </div>
       </div>
     </Router>

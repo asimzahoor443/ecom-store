@@ -49,10 +49,17 @@ const ProductPage = () => {
         Back
       </button>
       <img
-        src={product.images?.[0] || 'fallback-image-url'}
+        src={product.images?.[0]}
         alt={product.title}
         className="w-[50%] h-auto mb-5"
       />
+
+      <h1 className="text-2xl mb-4 font-bold">{product.title}</h1>
+      <p className="mb-4 text-gray-700 w-[70%]">{product.description}</p>
+      <div className="flex">
+        <p>Price: ${product.price}</p>
+        <p className="ml-10">Rating: {product.rating}</p>
+      </div>
     </div>
   );
 };
