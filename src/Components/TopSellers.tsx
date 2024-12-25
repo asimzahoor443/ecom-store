@@ -21,6 +21,8 @@ const TopSellers = () => {
           isFollowing: false,
           image: user.picture.medium,
         }));
+
+        setAuthors(authorsData);
       } catch (error) {
         console.error(`Error fetching authors: ${error}`);
       }
