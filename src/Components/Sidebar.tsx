@@ -78,12 +78,12 @@ const Sidebar = () => {
       <section>
         <input
           type="text"
-          className="border-2 rounded px-2 sm:mb-0"
+          className="border-2 rounded px-2 w-full sm:mb-0"
           placeholder="Search Product"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center mt-3 items-center">
           <input
             type="text"
             className="border-2 mr-2 px-5 py-3 mb-3 w-full"
